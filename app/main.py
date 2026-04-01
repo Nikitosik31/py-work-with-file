@@ -5,7 +5,7 @@ def create_report(create_report: str, report_file_name: str) -> None:
     with open(create_report, "r") as file:
         for line in file:
             clean_line = line.strip()
-            if not clean_line == "":
+            if not clean_line:
                 continue
             clean_line = clean_line.split(",")
             action = clean_line[0]
