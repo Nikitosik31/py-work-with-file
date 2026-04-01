@@ -3,7 +3,7 @@ def create_report(create_report: str, report_file_name: str) -> None:
     total_buy = 0
 
     with open(create_report, "r") as file:
-        for line in  file:
+        for line in file:
             clean_line = line.strip()
             if not clean_line == "":
                 continue
